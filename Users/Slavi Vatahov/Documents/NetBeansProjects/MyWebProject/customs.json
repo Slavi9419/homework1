@@ -1,0 +1,12 @@
+{
+    "elements": {
+        "style": {},
+        "title": {}
+    },
+    "attributes": {
+        "http-equiv": {},
+        "<": {
+            "context": "button"
+        }
+    }
+}

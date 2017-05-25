@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/index.js"></script>
+        <script src="js/validations.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="login" id="indexId">
+            <h1>Sign in</h1>
+            <form  action="#" method="post" name="form1">
+
+                <input type="text" id="loginUsernameID" name="loginUsername" placeholder="Username" required="required" />
+                <input type="password" id="loginPasswordID" name="loginPassword" placeholder="Password" required="required" />
+                <input type="button" onclick="usernameOrEmailRequired()" class="btn btn-primary btn-block btn-large" value="Sign in">
+
+                <h1>Sign up</h1>
+                <input type="text" id="singUpFirstNameID" name="singUpFirstName" placeholder="First name*" required="required" />
+                <input type="text" id="singUpLastNameID" name="singUpLastName" placeholder="Last name*" required="required" />
+                <input type="text" id="singUpUsernameID" name="singUpUsername" placeholder="Username*" required="required" />
+                <input type="text" id="emailID" name="singUpEmailID" placeholder="Email adress*" required="required" />
+                <input type="password" id="singUpPasswordID" name="singUpPassword" placeholder="Password*" required="required" />
+                <input type="password" id="singUpPasswordIDConfim" name="singUpPassConf" placeholder="Confim password*" required="required" />
+                <input type="button" onclick="ValidateEmail(document.form1.singUpEmailID);" class="btn btn-primary btn-block btn-large" value="Sign Up">
+
+            </form>
+        </div>
+    </body>
+</html>
